@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Support - Share Your Ideas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a4d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            width: 100%;
+            position: relative;
+        }
+        
+        .image-wrapper {
+            position: relative;
+            width: 100%;
+            cursor: default;
+        }
+        
+        .image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .clickable-area {
+            position: absolute;
+            right: 2%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 15%;
+            height: 25%;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+            border-radius: 50%;
+        }
+        
+        .clickable-area:hover {
+            opacity: 0.8;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .clickable-area:active {
+            transform: translateY(-50%) scale(0.95);
+        }
+
+        @media (max-width: 768px) {
+            .clickable-area {
+                width: 18%;
+                height: 20%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-wrapper">
+            <img src="Brand2.png" alt="Admin Support - Your ideas inspire our growth">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSddHHrDLuIlTPTjmTVs6e9fVqP_Rr6ZdXhgsAwke56sNbozTw/viewform" 
+               target="_blank" 
+               class="clickable-area"
+               aria-label="Share with us - Open feedback form"></a>
+        </div>
+    </div>
+</body>
+</html>
