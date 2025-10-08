@@ -65,13 +65,19 @@
         }
         
         .clickable-area:active {
-            transform: translate(-50%, -50%) scale(0.95);
+            transform: translate(0, -50%) scale(0.95);
         }
 
         @media (max-width: 768px) {
             .clickable-area {
                 width: 18%;
                 height: 20%;
+                right: 5%;
+                top: 62%;
+            }
+            
+            .clickable-area span {
+                font-size: 2rem !important;
             }
         }
     </style>
@@ -85,7 +91,7 @@
                 class="clickable-area"
                 aria-label="Share with us - Open feedback form"
                 title="Share with us">
-                 <span style="font-size:3rem;">💡</span>
+                 <span style="font-size:2.5rem;">💡</span>
              </a>
         </div>
     </div>
