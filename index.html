@@ -41,14 +41,22 @@
         
         .clickable-area {
             position: absolute;
-            right: 2%;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 15%;
-            height: 25%;
+            right: 10%;
+            top: 60%;
+            transform: translate(0, -50%);
+            width: 60px;
+            height: 60px;
             cursor: pointer;
             transition: opacity 0.3s ease;
             border-radius: 50%;
+            background: transparent;
+            color: #1a1a4d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            z-index: 10;
+            text-decoration: none;
         }
         
         .clickable-area:hover {
@@ -57,7 +65,7 @@
         }
         
         .clickable-area:active {
-            transform: translateY(-50%) scale(0.95);
+            transform: translate(-50%, -50%) scale(0.95);
         }
 
         @media (max-width: 768px) {
@@ -72,10 +80,13 @@
     <div class="container">
         <div class="image-wrapper">
             <img src="Brand2.png" alt="Admin Support - Your ideas inspire our growth">
-            <a href="https://forms.gle/i8JNdnM6bK5HKAHAA" 
-               target="_blank" 
-               class="clickable-area"
-               aria-label="Share with us - Open feedback form"></a>
+                <a href="https://forms.gle/i8JNdnM6bK5HKAHAA" 
+                target="_blank" 
+                class="clickable-area"
+                aria-label="Share with us - Open feedback form"
+                title="Share with us">
+                 <span style="font-size:3rem;">💡</span>
+             </a>
         </div>
     </div>
 </body>
